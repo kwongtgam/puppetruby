@@ -4,6 +4,10 @@ class rvm {
     ensure => installed,
   }
 
+  package { 'nodejs':
+    ensure => installed,
+  }
+
   file { "/etc/profile.d/rvmenv":
     ensure  => file,
     content => template("rvm/rvmenv.erb"),
