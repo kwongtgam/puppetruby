@@ -4,7 +4,7 @@ class rvm {
     ensure => installed,
   }
 
-  package { 'nodejs':
+  package { [ 'nodejs', 'tree']:
     ensure => installed,
   }
 
